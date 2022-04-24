@@ -15,7 +15,7 @@ resource "aws_lambda_function" "function" {
   timeout           = var.instance.timeout
 
   filename          = "lambdas/${var.instance.name}.zip"
-  source_code_hash  = filebase64sha256("./lambdas/${var.instance.name}.zip")
+  source_code_hash  = filebase64sha256("lambdas/${var.instance.name}.zip")
 
   publish           = var.instance.publish
 }

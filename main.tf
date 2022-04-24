@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 resource "aws_lambda_function" "function" {
   function_name     = var.instance.name
 

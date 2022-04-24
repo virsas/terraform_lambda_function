@@ -39,5 +39,7 @@ module "lambdaS3Move" {
   source       = "github.com/virsas/terraform_lambda_function"
   instance     = var.lambdaS3Move
   role         = modeul.S3MoveLambdaRole.arn
+  # sometimes it matters where the lambda is, so region is modifiable
+  region       = "eu-west-1"
 }
 ```

@@ -4,7 +4,7 @@ Terraform module to create lambda function
 
 ## Dependencies
 
-IAM Role  <https://github.com/virsas/terraform_iam_role>
+- IAM Role  <https://github.com/virsas/terraform_iam_role>
 
 You also need a zipped function.
 

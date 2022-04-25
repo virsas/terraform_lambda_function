@@ -1,3 +1,3 @@
 variable "instance" { default = {}}
 variable "role" {}
-variable "region" {}
+variable "region" { default = "eu-west-1" }
